@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     //pushの練習コメント
     //commit & push の練習コメント
+    //push リモートの反映の練習コメント
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     private fun onSaveTapped(){
         //画面表示の値を共有プリファレンスに保存する
         //共有プリファレンスのインスタンスを取得
-        val pref = PreferenceManager.getDefaultSharedPreferences(this);
+        val pref = PreferenceManager.getDefaultSharedPreferencnes(this);
 
         //共有プリファレンスを更新(editメソッド)
         pref.edit{ //ラムダ式でインスタンスに対して引き続き処理を実行
